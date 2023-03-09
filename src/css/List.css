@@ -1,0 +1,227 @@
+.list-box{
+    width:1500px;
+    /* height:1000px; */
+  }
+
+.list-box img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:950px;
+    transform: rotate(180deg);
+
+}
+.list-text{
+    position: relative;
+    top:150px;
+    left:680px;
+    font-size: 90px;
+    color: white;
+}
+.todo-header {
+    position: relative;
+    top:240px;
+    left:400px;
+}
+.todo-header input{
+    width: 1000px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid #c7bcec;
+    padding: 4px 7px;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.todo-header input:focus{
+    outline: none;
+    border-color: lightblue;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+}
+.wrap{
+    position: relative;
+    /* border: 1px solid red; */
+    top:260px;
+    left:420px;
+    width: 980px;
+}
+/* Wlist */
+.todo-main{
+    border: 3px solid #b9abeb;
+    position: relative;
+    top:0;
+    left:0;
+    /* margin-top: 5px; */
+    width: 980px;
+    border-radius: 10px;
+}
+
+.todo-empty{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+/* item */
+.todo-main .item-li{
+    position: relative;
+    list-style: none;
+    height: 40px;
+    line-height: 36px;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* border-bottom: 2px solid rgb(250, 240, 240); */
+}
+
+.todo-main .item-li:hover{
+    background-color: #d5cfee;
+}
+
+.todo-main .item-li::after{
+    content: '';
+    position: absolute;
+    top:100%;
+    left: 0;
+    border-bottom: 2px solid #ccc3ec;
+    width: 95%;
+}
+.todo-main .item-li .item-label{
+    float: left;
+    cursor: pointer;
+}
+.todo-main .item-li .item-label .todo-main .item-li input{
+    vertical-align: middle;
+}
+.todo-main .item-li button{
+    float: right;
+    background-color: #b9abeb;
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    /* display: none; */
+    margin: 2px 15px 0px 5px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-align: center;
+}
+.todo-main .item-li:before{
+    content: initial;
+}
+.todo-main .item-li:last-child{
+    border-bottom: none;
+}
+
+.todo-main .item-li .item-span{
+    font-size: 23px;
+    color: #876fdf;
+    font-weight: 550;
+    padding-left: 10px;
+}
+
+.todo-main .item-btn {
+    border: 0 none;
+    background: transparent;
+}
+.todo-main .btn-danger {
+    color: #fff;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 3px #ccc;
+    cursor: pointer;
+    outline: 0;
+}
+.todo-main .btn-danger:active{
+    box-shadow: 0 0 3px inset rgb(245, 240, 240);
+}
+
+/* footer */
+
+.footer-box{
+    height: 50px;
+    width: 98%;
+    line-height: 40px;
+    padding-left: 23px;
+    margin-top: 5px;
+    background-color: #d1cce4;
+    border-radius: 10px;
+}
+
+.footer-box label{
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer-box label input{
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.footer-box button{
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #b9abeb;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 10px;
+    border: none;
+    color: white;
+}
+.footer-box button:active{
+    box-shadow: 0 0 3px inset rgb(245, 240, 240);
+}
+/* black button */
+.list-box .btn_styles {
+    position: relative;
+    top:35px;
+    left:30px;
+    width:100px;
+    height:40px;
+    font-size: 20px;
+    letter-spacing:1px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    border-top-left-radius:100px;
+    border-bottom-left-radius:100px;
+    border:#fbc2eb ;
+    background: linear-gradient(to right,#f0c2e3 50%,#f3eded); 
+    z-index: 1;
+    transition: linear 0.3s;
+  } 
+
+  .list-box .btn_styles::before{
+      content: '';
+      position: absolute;
+      top:-5px;
+      left:-5px;
+      bottom:-5px;
+      right:-5px;
+      z-index: -1;
+      background: linear-gradient(to right,#f0c2e3 50%,#f3eded);
+      border-radius: 50px;
+      border-top-left-radius:100px;
+      border-bottom-left-radius:100px;
+      filter: blur(2px);
+  }
+
+  .list-box .btn_styles:hover{
+    width:105px;
+    height:45px;
+    font-size: 23px;
+    letter-spacing:2px;
+  }
+
+  .list-box .btn_styles:hover::before{
+    filter: blur(10px);
+}

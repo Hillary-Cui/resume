@@ -1,0 +1,79 @@
+/* start page  */
+#text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 76px;
+    /* --c var fucntion to callback */
+    --c:pink;
+    /* setting text shadow  */
+    text-shadow: 0 0 10px var(--c),
+    0 0 20px var(--c),
+    0 0 40px var(--c),
+    0 0 80px var(--c),
+    0 0 1600px var(--c);
+    /* setting animation */
+    animation: animate 5s linear infinite;
+}
+
+/* text animation */
+@keyframes animate {
+    to{
+        /* 色相旋转滤镜 */
+        filter:hue-rotate(360deg);
+    }
+    
+}
+
+.start_button{
+    position: relative;
+    top:720px;
+    left:800px;
+    width: 190px;
+    height: 60px;
+    line-height: 100%;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    color: #fdfcfb;
+    background: linear-gradient(to right,#a6c1ee,#fbc2eb,#5ee7df,#a6c1ee);
+    background-size: 300%;
+    border-radius: 50px;
+    z-index: 1;
+}
+/* highlight button */
+.start_button::before{
+    content: "";
+    position:absolute;
+    top:-5px;
+    left:-5px;
+    bottom:-5px;
+    right:-5px;
+    background: linear-gradient(to right,#a6c1ee,#fbc2eb,#5ee7df,#a6c1ee);
+    background-size: 300%;
+    border-radius: 50px;
+    /* 位于按钮之下 */
+    z-index: -1;
+    /* seeting blur to display highlight */
+    filter: blur(20px);
+}
+
+.start_button:hover{
+    animation: startanimation 8s infinite; 
+}
+.start_button:hover::before{
+    animation: startanimation 8s infinite; 
+}
+/* button anmation */
+@keyframes startanimation {
+    100%{
+        background-position: -500% 0;
+    }
+}
+

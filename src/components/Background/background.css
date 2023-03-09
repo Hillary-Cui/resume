@@ -1,0 +1,139 @@
+.bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url("./background.jpeg");
+    background-size: cover;
+    background-position-x: center;
+    animation: animationbg 60s linear infinite;
+}
+
+/* background zoom in/out animation */
+@keyframes animationbg{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.8);
+    }
+}
+/* meteor */
+.bg span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* highlight */
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 15px rgba(255,255,255,1);
+    animation: animationlight 10s linear infinite;
+}
+/* meteor tail */
+.bg span::before{
+    content: "";
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg,#fff,transparent)
+}
+
+/* meteor animation */
+
+@keyframes animationlight{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.8;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+/* other meteor */
+
+.bg span:nth-child(1){
+    top:0;
+    right:0;
+    /* initial关键字用于设置CSS属性为它的默认值 */
+    left: initial;
+    /* 动画延迟时间 */
+    animation-delay: 0s;
+    /* 动画时长 */
+    animation-duration: 1s;
+}
+
+.bg span:nth-child(2){
+    top:0;
+    right:80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.bg span:nth-child(3){
+    top:80px;
+    right:0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.bg span:nth-child(4){
+    top:0px;
+    right:180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.bg span:nth-child(5){
+    top:0px;
+    right:400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.bg span:nth-child(6){
+    top:0px;
+    right:600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.bg span:nth-child(7){
+    top:0px;
+    right:800px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 3.5s;
+}
+.bg span:nth-child(8){
+    top:0px;
+    right:1000px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 4s;
+}
+.bg span:nth-child(9){
+    top:300px;
+    right:0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.bg span:nth-child(10){
+    top:0px;
+    right:450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}

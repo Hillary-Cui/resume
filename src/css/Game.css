@@ -1,0 +1,194 @@
+.game-box{
+    width:800px;
+    /* height:1000px; */
+  }
+
+.game-box img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:950px;
+    transform: rotate(180deg);
+
+}
+.game-box .game-text{
+    position: relative;
+    top:150px;
+    left:780px;
+    font-size: 90px;
+    color: white;
+}
+
+/* main */
+
+.game-box .dice-box{
+    position: relative;
+    top:200px;
+    left:520px;
+    height: 420px;
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box .instructions {
+    position: absolute;
+    top:10px;
+    font-size:20px;
+    text-align: center;
+    color: white;
+}
+
+.game-box .dice-container{
+    position: absolute;
+    height: 200px;
+    top:80px;
+    border-radius: 50px;
+    display: grid;
+    grid-template: auto auto /repeat(5,1fr);
+    gap:30px;
+    padding: 40px 60px 40px 60px;
+}
+
+.game-box .dice_face{
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(104, 127, 230);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.game-box .dice_value{
+    font-size: 2rem;
+
+}
+/* 
+.game-box .dice-button{
+    position: absolute;
+    bottom:0;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(to top,#91daec 45%,#f3eded); 
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+} */
+
+/* It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key. */
+/* .game-box .dice-button:focus{
+    outline: none;
+} */
+
+/* 当按下按钮时的状态 */
+/* .game-box .dice-button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(219, 153, 203, 0.7);
+} */
+
+.game-box .dice-button{
+    position: absolute;
+    bottom:0;
+    height: 50px;
+    width: 170px;
+    line-height: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+    border: none;
+    color: #fdfcfb;
+    background: linear-gradient(to right,#a6c1ee,#fbc2eb,#5ee7df,#a6c1ee);
+    background-size: 300%;
+    border-radius: 50px;
+    z-index: 1;
+}
+/* highlight button */
+.game-box .dice-button::before{
+    content: "";
+    position:absolute;
+    top:-5px;
+    left:-5px;
+    bottom:-5px;
+    right:-5px;
+    background: linear-gradient(to right,#a6c1ee,#fbc2eb,#5ee7df,#a6c1ee);
+    background-size: 300%;
+    border-radius: 50px;
+    /* 位于按钮之下 */
+    z-index: -1;
+    /* seeting blur to display highlight */
+    filter: blur(20px);
+}
+
+.game-box .dice-button:hover{
+    animation: startanimation 8s infinite; 
+}
+.game-box .dice-button:hover::before{
+    animation: startanimation 8s infinite; 
+}
+/* button anmation */
+@keyframes startanimation {
+    100%{
+        background-position: -500% 0;
+    }
+}
+
+/* back button */
+.game-box .btn_styles {
+    position: relative;
+    top:35px;
+    left:30px;
+    width:100px;
+    height:40px;
+    font-size: 20px;
+    letter-spacing:1px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    border-top-left-radius:100px;
+    border-bottom-left-radius:100px;
+    border:#fbc2eb ;
+    background: linear-gradient(to right,#a6c1ee 50%,#f3eded); 
+    z-index: 1;
+    transition: linear 0.3s;
+  } 
+
+  .game-box .btn_styles::before{
+      content: '';
+      position: absolute;
+      top:-5px;
+      left:-5px;
+      bottom:-5px;
+      right:-5px;
+      z-index: -1;
+      background: linear-gradient(to right,#a6c1ee 50%,#f3eded);
+      border-radius: 50px;
+      border-top-left-radius:100px;
+      border-bottom-left-radius:100px;
+      filter: blur(2px);
+  }
+
+  .game-box .btn_styles:hover{
+    width:105px;
+    height:45px;
+    font-size: 23px;
+    letter-spacing:2px;
+  }
+
+  .game-box .btn_styles:hover::before{
+    filter: blur(10px);
+}
