@@ -21,7 +21,7 @@ const route =[
     {
         // 默认页面
         path:'/',
-        element:<Navigate to="/home" />
+        element:<Navigate to="/start" />
     },
     {
         // 默认页面

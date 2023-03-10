@@ -1,5 +1,5 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,Link} from 'react-router-dom'
 // import ReactPlayer from 'react-player'
 import '../css/Model.css'
 
@@ -39,11 +39,20 @@ export default function Model(){
               So, first of all, in the website I will not only provide photos and videos of different countries' attractions, to increase user engagement.
               For some particularly famous attractions, such as the Forbidden City in China. I will add 3D views and animations so that users can experience a more realistic Forbidden City.
               This is better than seeing the Forbidden City in pictures through VR technology as users can continue to access the website on a regular computer or smartphone. 
-              
+              <br/><br/>
+              if the video could not open, please click the link below. <br/><br/>
+              <a
+                href="https://youtu.be/fhOSQsR6M4M"
+                target='_blank'
+                rel="noopener"
+              >
+                  https://youtu.be/fhOSQsR6M4M
+              </a>
                </h4>
-          <video width="1500" height="700" className='video_styles' controls>
+            
+          {/* <video width="1500" height="700" className='video_styles' controls>
           <source src={require("../video/Building.mp4")} type="video/mp4" />
-          </video>
+          </video> */}
           {/* <ReactPlayer 
           className='video_styles'
           url={require("../video/Building.mp4")}

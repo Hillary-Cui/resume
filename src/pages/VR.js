@@ -37,12 +37,21 @@ export default function VR(){
                employees will better understand their roles and get familiar with skills required for this job. 
                <br/> <br/>
                (This is a real game can play. The video is showing the player perspective)
+               <br/><br/>
+              if the video could not open, please click the link below. <br/><br/>
+              <a
+                href="https://youtu.be/SuD24xUSn7A"
+                target='_blank'
+                rel="noopener"
+              >
+                 https://youtu.be/SuD24xUSn7A
+              </a>
                </h4>
 
           <ReactPlayer 
           className='video_styles'
           style={video_style}
-          url={require('../video/CP17.mp4')}
+          // url={require('../video/CP17.mp4')}
           width="1200"
           height="50"
           controls={true}
