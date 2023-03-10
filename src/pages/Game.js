@@ -15,9 +15,13 @@ export default function Game(){
     const [times,setNewTime] = React.useState({
         allTime:0
     });
-    const [bestScore,setBestScore] = React.useState(()=>JSON.parse(localStorage.getItem("bestScore")) || 0);
-
+    
     let now = formateTime(times.allTime);
+
+    const [bestScore,setBestScore] = React.useState(0) ;
+    let bestOne = formateTime(bestScore);
+    // ()=>JSON.parse(localStorage.getItem("bestScore"))||
+
 
     const nevigate = useNavigate();
     function back(){
@@ -25,9 +29,9 @@ export default function Game(){
     };
 
     // localStorage
-    React.useEffect(()=>{
-        localStorage.getItem("bestScore",JSON.stringify(bestScore));
-    },[bestScore])
+    // React.useEffect(()=>{
+    //      localStorage.getItem("bestScore",JSON.stringify(bestScore));
+    // },[bestScore])
 
     // check win
     React.useEffect(()=>{
@@ -35,8 +39,17 @@ export default function Game(){
         const firstValue = dice[0].value;
         const allSameValue = dice.every(die =>die.value === firstValue);
         if(allHeld && allSameValue){
+            // if( times.allTime < bestScore){
+            //             console.log("after" + times.allTime);
+            //             setBestScore(times.allTime);
+            //             // const bestOne = formateTime(bestScore);
+            //             // console.log("aftera" + bestOne);
+            //         }else{
+            //             console.log("afterb" + times.allTime);
+            //             setBestScore(bestScore);
+            //         }
             setTenzies(true);
-            alert(`Congraduation! You Win! This times you used `+ now + " to win!" + "Your best score is" + bestScore);
+            alert(`Congraduation! You Win! This times you used `+ now + " to win!" + "Your best score is " + bestOne);
         }
     },[dice])
 
@@ -53,10 +66,11 @@ export default function Game(){
             }
     },[dice])
 
+
 // 整个dice
     function allNewDice(){
         const newDice = [];
-        for(let i = 0;i<15;i++){
+        for(let i = 0;i<2;i++){
             newDice.push(generationNewDice());
         }
         return newDice;
@@ -80,7 +94,6 @@ export default function Game(){
 
         }else{
             if(!bestScore || now < bestScore){
-                
             }
             setTenzies(false);
             SetDice(allNewDice());

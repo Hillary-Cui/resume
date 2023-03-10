@@ -22,7 +22,7 @@ export default function Portfolio(){
            </ul>
 
            <h2 className='por-text'>My portofolio</h2>
-           <img src= {require('../image/2.png')} className='pro-img'/>
+           <img src= {require('../image/2.png')} className='pro-img' alt='portofolio'/>
           
            <ul className='sec-nav'>
                <li><NavLink className={secondeNav} to='all'>ALL</NavLink></li>

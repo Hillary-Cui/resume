@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link,Outlet,useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import Pic from '../image/data_html'
 import '../css/All.css'
 
@@ -14,7 +14,7 @@ export default function Html(){
                                 return(
                                     <div key={m.id} className='small-box'>
                                                <div className='img-small-box'>
-                                                    <img src={m.converImg} />
+                                                    <img src={m.converImg} alt='html'/>
                                                </div>
                                                 <div className='text-small-box'>
                                                     <h2>{m.title}</h2>

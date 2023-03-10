@@ -5,7 +5,7 @@ export default function Wlist(props){
 
     const{todo,updateTodo,deleteTodo} = props
 
-    const[mouse,setMouse] = React.useState(false);
+    // const[mouse,setMouse] = React.useState(false);
 
     // const handleMouseOver = ()=>setMouse(true);
     // const handleMouseLeave = () =>setMouse(false);

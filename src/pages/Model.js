@@ -1,5 +1,5 @@
 import React from 'react'
-import {useNavigate,Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 // import ReactPlayer from 'react-player'
 import '../css/Model.css'
 
@@ -21,7 +21,7 @@ export default function Model(){
                <li><NavLink className={computedClassName} to='/about' >About</NavLink></li>
                <li><NavLink className={computedClassName} to='/message' >Message</NavLink></li>
            </ul> */}
-           <img src= {require('../image/2.png')} />
+           <img src= {require('../image/2.png')} alt='3D modle' />
           <button onClick={back} className='btn_styles'>Back</button>
           <h1 className='h1-styles'>3D modeling - The Forbidden City</h1>
           <h4 className='h4-styles'> 
@@ -44,7 +44,7 @@ export default function Model(){
               <a
                 href="https://youtu.be/fhOSQsR6M4M"
                 target='_blank'
-                // rel="noopener"
+                rel="noreferrer"
               >
                   https://youtu.be/fhOSQsR6M4M
               </a>
@@ -55,7 +55,7 @@ export default function Model(){
           </video> */}
           {/* <ReactPlayer 
           className='video_styles'
-          url={require("../video/Building.mp4")}
+          // url={require("../video/Building.mp4")}
           width="1500"
           height="700"
           controls={true}

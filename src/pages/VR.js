@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 // npm install react-player
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import '../css/Model.css'
 
 
@@ -15,15 +15,15 @@ export default function VR(){
     navigate(-1);
   }
 
-  const video_style = {
-    position: "relative",
-    top:"350px",
-    // height:"500px"
-  }
+  // const video_style = {
+  //   position: "relative",
+  //   top:"350px",
+
+  // }
 
     return(
         <div className='model-whole'>
-           <img src= {require('../image/2.png')} />
+           <img src= {require('../image/2.png')} alt='VR' />
           <button onClick={back} className='btn_styles'>Back</button>
           <h1 className='h1-styles'>Youth Justice center VR application</h1>
           <h4 className='h4-styles'> 
@@ -42,20 +42,20 @@ export default function VR(){
               <a
                 href="https://youtu.be/SuD24xUSn7A"
                 target='_blank'
-                // rel="noopener"
+                rel="noreferrer"
               >
                  https://youtu.be/SuD24xUSn7A
               </a>
                </h4>
 
-          <ReactPlayer 
+          {/* <ReactPlayer 
           className='video_styles'
           style={video_style}
           // url={require('../video/CP17.mp4')}
           width="1200"
           height="50"
           controls={true}
-          />
+          /> */}
       </div>
     )
 }
