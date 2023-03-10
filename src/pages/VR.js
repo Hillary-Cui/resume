@@ -42,7 +42,7 @@ export default function VR(){
               <a
                 href="https://youtu.be/SuD24xUSn7A"
                 target='_blank'
-                rel="noopener"
+                // rel="noopener"
               >
                  https://youtu.be/SuD24xUSn7A
               </a>

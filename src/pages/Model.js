@@ -44,7 +44,7 @@ export default function Model(){
               <a
                 href="https://youtu.be/fhOSQsR6M4M"
                 target='_blank'
-                rel="noopener"
+                // rel="noopener"
               >
                   https://youtu.be/fhOSQsR6M4M
               </a>
