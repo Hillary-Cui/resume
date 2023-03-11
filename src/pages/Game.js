@@ -93,7 +93,7 @@ export default function Game(){
 // 整个dice
     function allNewDice(){
         const newDice = [];
-        for(let i = 0;i<2;i++){
+        for(let i = 0;i<15;i++){
             newDice.push(generationNewDice());
         }
         return newDice;
