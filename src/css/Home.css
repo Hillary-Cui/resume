@@ -1,5 +1,6 @@
 .profile{
     /* border: 1px solid red; */
+    display:flex;
     position: absolute;
     top:20%;
     /* top:200px; */
@@ -10,6 +11,7 @@
     /* border: 1px solid red; */
 }
 .cirle{
+    display:flex;
     position:absolute;
     top:68px;
     left:62%;
@@ -21,6 +23,7 @@
 }
 
 .profile_btn{
+    display:flex;
     position:relative;
     top:410px;
     left:450px;
@@ -84,6 +87,7 @@
 }
 
 .big-box{
+    display:flex;
     position: relative;
     top:800px;
     left:130px;
