@@ -31,11 +31,11 @@ const pic=[
         converImg: require("../components/Card/Meme.png"),
         url:"/search"
     },
-    {
-        id:6,
-        title:'Small Calculator',
-        converImg: require("../components/Card/Builiding.jpg"),
-        url:"/calculator"
-    }
+    // {
+    //     id:6,
+    //     title:'Small Calculator',
+    //     converImg: require("../components/Card/Builiding.jpg"),
+    //     url:"/calculator"
+    // }
 ]
 export default pic;

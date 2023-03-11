@@ -7,6 +7,7 @@ import { nanoid } from 'nanoid'
 import Confetti from "react-confetti"
 import Background from '../components/Background/Background';
 import formateTime  from '../pages/Formattime'
+import { TableSortLabel } from '@mui/material'
 
 export default function Game(){
     
@@ -18,8 +19,10 @@ export default function Game(){
     
     let now = formateTime(times.allTime);
 
-    const [bestScore,setBestScore] = React.useState(0) ;
-    let bestOne = formateTime(bestScore);
+    const [bestScore,setBestScore] = React.useState({
+        score:[],
+        bestOne:now,
+    }) ;
     // ()=>JSON.parse(localStorage.getItem("bestScore"))||
 
 
@@ -31,6 +34,8 @@ export default function Game(){
     // localStorage
     // React.useEffect(()=>{
     //      localStorage.getItem("bestScore",JSON.stringify(bestScore));
+    //      setBestScore(bestScore);
+    //      console.log('nowtime: '+ now +'score: '+ bestScore);
     // },[bestScore])
 
     // check win
@@ -38,34 +43,52 @@ export default function Game(){
         const allHeld = dice.every(die=>die.isHeld);
         const firstValue = dice[0].value;
         const allSameValue = dice.every(die =>die.value === firstValue);
+        console.log('time: '+ times.allTime +'score: '+ bestScore.score);
         if(allHeld && allSameValue){
-            // if( times.allTime < bestScore){
-            //             console.log("after" + times.allTime);
-            //             setBestScore(times.allTime);
-            //             // const bestOne = formateTime(bestScore);
-            //             // console.log("aftera" + bestOne);
-            //         }else{
-            //             console.log("afterb" + times.allTime);
-            //             setBestScore(bestScore);
-            //         }
+            if(bestScore.score.length > 0){
+                console.log("check");
+             let newOne = mySore(bestScore.score);
+            //  setBestScore({...bestScore,bestOne:formateTime(newOne)});
+            bestScore.bestOne = formateTime(newOne);
+             console.log('newscore: '+ bestScore.score);
+            }
+            if( now < bestScore.bestOne){
+                bestScore.bestOne = now;
+            }
             setTenzies(true);
-            alert(`Congraduation! You Win! This times you used `+ now + " to win!" + "Your best score is " + bestOne);
+            alert(`Congraduation! You Win! This times you used `+ now + " to win!" + "Your best score is " + bestScore.bestOne);
         }
     },[dice])
+
 
     // Timer
     React.useEffect(()=>{
         console.log("start" + times.allTime);
         console.log("now" + now);
         const timer =setInterval(() => {
-            setNewTime({allTime:(++times.allTime)})
+            setNewTime({allTime:(++times.allTime)});
+            setBestScore({...bestScore,bestOne:formateTime(times.allTime)});
         }, 10);
+ 
             return()=>{
                 clearInterval(timer);
                 console.log('clear');
             }
     },[dice])
 
+    function mySore(arr){
+        for(let i = 0;i<arr.length;i++){
+            for(let j = 0; j<arr.length-1-i;j++){
+                let temp = arr[j];
+                if(arr[j]>arr[j+1]){
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        console.log(arr);
+        return arr[0];
+    }
 
 // 整个dice
     function allNewDice(){
@@ -93,10 +116,14 @@ export default function Game(){
             }));
 
         }else{
-            if(!bestScore || now < bestScore){
+            if(!bestScore || now < bestScore.bestOne){
             }
             setTenzies(false);
             SetDice(allNewDice());
+            setBestScore((prev)=>({
+                score:[...prev.score,times.allTime],
+
+            }));
             setNewTime({allTime:0}); 
         }
     }

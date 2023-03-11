@@ -1,7 +1,9 @@
 .nav{
     position: absolute;
-    top:85px;
-    left: 760px;
+    top:10%;
+    left:42%;
+    /* top:85px;
+    left: 760px; */
     display: flex;
     justify-content: center;
     align-items: center;

@@ -32,9 +32,11 @@
 }
 
 .start_button{
-    position: relative;
-    top:720px;
-    left:800px;
+    position: absolute;
+    top:70%;
+    left:45%;
+    /* top:720px;
+    left:800px; */
     width: 190px;
     height: 60px;
     line-height: 100%;

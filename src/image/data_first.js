@@ -13,9 +13,9 @@ const data=[
     },
     {
         id:3,
-        name:'',
-        describe:"",
-        converImg: "Builiding.jpg",
+        name:'Tenzies Game',
+        describe:"This game is suitable for early childhood. They can use the game to identify numbers.",
+        converImg: "game.jpeg",
     },
 ]
 export default data;
