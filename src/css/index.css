@@ -5,10 +5,11 @@
 body{
     position: relative;
     width: 100%;
+    height: 100%;
     /* height: 100vh; */
     /* max-height: 5000px; */
     background: linear-gradient(150deg,#d299c2,#fef9d7) fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* font-family: 'EB Garamond'; */
 }
 
