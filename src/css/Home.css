@@ -1,5 +1,6 @@
 .whole{
     position: relative;
+    display: flex;
     height:100%;
     width: 100%;
     margin: 0;
@@ -7,22 +8,28 @@
 }
 .profile{
     /* border: 1px solid red; */
-    display:flex;
+    /* display:flex; */
     position: absolute;
-    top:20%;
-    /* top:200px; */
-    /* left: 200px; */
-    height: 550px;
+    top:15%;
+    height: 100%;
     width: 100%;
     /* background:linear-gradient(150deg,#d299c2,#f6ebf3); */
     /* border: 1px solid red; */
 }
+.profile h1 {
+    width: 500px;
+}
+.profile h3 {
+    width: 600px;
+}
+.profile p {
+    width: 600px;
+}
 .cirle{
-    display:flex;
     position:absolute;
-    top:20%;
+    top:15%;
     /* top:68px; */
-    left:62%;
+    left:92%;
     width:380px;
     height:380px;
     fill: none;
@@ -32,14 +39,15 @@
 
 .profile_text{
     position:absolute;
-    top:20%;
+    top:15%;
+    left:10%;
 }
 
 .profile_btn{
-    display:flex;
+    /* display:flex; */
     position:relative;
-    top:410px;
-    left:450px;
+    top:350px;
+    left:130%;
     width: 200px;
     height: 60px;
     text-align: center;
@@ -103,7 +111,7 @@
     display:flex;
     position: relative;
     top:800px;
-    left:130px;
+    left:10%;
     width: 1600px;
     height: 900px;
 }

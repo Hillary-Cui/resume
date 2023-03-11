@@ -10,10 +10,10 @@ export default function Home(){
     
     const text_styles = {
         position:'absolute',
-        top:'140px',
-        left:'350px',
+        top:'15%',
+        left:'80%',
         color: '#fcf8fb',
-        fontSize: '60px',
+        fontSize: '55px',
         fontFamily:'EB Garamond'
     }
 
@@ -58,14 +58,14 @@ export default function Home(){
                 </div>
                 <div className='profile_text'>
                     <h1 style={text_styles}>I'm Yaxuan Cui</h1>
-                    <h3 style={{position:"absolute",top:'230px',left:'300px',fontSize:'23px',color: '#fcf8fb',lineHeight:'35px',fontWeight:'500'}}>
+                    <h3 style={{position:"absolute",top:'200%',left:'50%',fontSize:'23px',color: '#fcf8fb',lineHeight:'35px',fontWeight:'500'}}>
                         I am a Master of IT graduate from the University of Sydney.
                         <br/>I am looking forward to make my career in front-end.</h3>
-                        <p style={{position:"absolute",top:'340px',left:'300px',fontSize:'23px',color: '#fcf8fb',lineHeight:'40px',fontWeight:'500'}}>
+                        <p style={{position:"absolute",top:'400%',left:'50%',fontSize:'23px',color: '#fcf8fb',lineHeight:'40px',fontWeight:'500'}}>
                             Phone: (+61)403880863 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             Email: xhinhinx@gmail.com </p>
                     <button className='profile_btn' onClick={()=>navigate('/about')}>Learn More</button>
-                    <h2 style={{position:"absolute",top:'650px',left:'620px',fontSize:'40px',color: '#fcf8fb',lineHeight:'35px',fontFamily:'Times New Roman'}}>SOME OF MY PORTOFOLIO....</h2>
+                    <h2 style={{position:"absolute",top:'900%',left:'180%',fontSize:'40px',color: '#fcf8fb',lineHeight:'35px',fontFamily:'Times New Roman',width:'600px'}}>SOME OF MY PORTOFOLIO....</h2>
                 </div>
                 
            </div>

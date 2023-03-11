@@ -1,7 +1,7 @@
 .nav{
     position: absolute;
     top:10%;
-    left:42%;
+    left:60%;
     /* top:85px;
     left: 760px; */
     display: flex;
@@ -20,7 +20,7 @@
     /* border: 1px solid red; */
     border-top: 1px solid #fcf8fb;
     border-bottom: 1px solid  #fcf8fb;
-    font-size: 27px;
+    font-size: 25px;
     font-family: 'EB Garamond';
     font-weight: bold;
 }
