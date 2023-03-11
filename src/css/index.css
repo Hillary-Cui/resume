@@ -1,11 +1,11 @@
 *{
-    position: relative;
     margin: 0;
     padding: 0;
 }
 body{
+    position: relative;
     /* height: 100vh; */
-    max-height: 5000px;
+    /* max-height: 5000px; */
     background: linear-gradient(150deg,#d299c2,#fef9d7) fixed;
     /* overflow: hidden; */
     /* font-family: 'EB Garamond'; */
