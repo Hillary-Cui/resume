@@ -41,7 +41,7 @@ export default function Home(){
 
   
     return(
-        <div>
+        <div className='whole'>
                {/* <img src= {require('../image/2.png')} className='pro-img'/> */}
             {/* nav bar */}
            <ul className='nav'>
