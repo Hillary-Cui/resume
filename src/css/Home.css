@@ -1,5 +1,9 @@
 .whole{
     position: relative;
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .profile{
     /* border: 1px solid red; */
@@ -16,13 +20,19 @@
 .cirle{
     display:flex;
     position:absolute;
-    top:68px;
+    top:20%;
+    /* top:68px; */
     left:62%;
     width:380px;
     height:380px;
     fill: none;
     border:5px solid #f6ebf3;
     border-radius:50%;
+}
+
+.profile_text{
+    position:absolute;
+    top:20%;
 }
 
 .profile_btn{

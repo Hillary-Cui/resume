@@ -56,15 +56,18 @@ export default function Home(){
                <div className='cirle'>
                     <img src={require('../image/my.jpg')} style={img_styles} alt='profile'/>
                 </div>
-                <h1 style={text_styles}>I'm Yaxuan Cui</h1>
-                <h3 style={{position:"absolute",top:'230px',left:'300px',fontSize:'23px',color: '#fcf8fb',lineHeight:'35px',fontWeight:'500'}}>
-                    I am a Master of IT graduate from the University of Sydney.
-                    <br/>I am looking forward to make my career in front-end.</h3>
-                    <p style={{position:"absolute",top:'340px',left:'300px',fontSize:'23px',color: '#fcf8fb',lineHeight:'40px',fontWeight:'500'}}>
-                         Phone: (+61)403880863 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                         Email: xhinhinx@gmail.com </p>
-                <button className='profile_btn' onClick={()=>navigate('/about')}>Learn More</button>
-                <h2 style={{position:"absolute",top:'650px',left:'620px',fontSize:'40px',color: '#fcf8fb',lineHeight:'35px',fontFamily:'Times New Roman'}}>SOME OF MY PORTOFOLIO....</h2>
+                <div className='profile_text'>
+                    <h1 style={text_styles}>I'm Yaxuan Cui</h1>
+                    <h3 style={{position:"absolute",top:'230px',left:'300px',fontSize:'23px',color: '#fcf8fb',lineHeight:'35px',fontWeight:'500'}}>
+                        I am a Master of IT graduate from the University of Sydney.
+                        <br/>I am looking forward to make my career in front-end.</h3>
+                        <p style={{position:"absolute",top:'340px',left:'300px',fontSize:'23px',color: '#fcf8fb',lineHeight:'40px',fontWeight:'500'}}>
+                            Phone: (+61)403880863 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Email: xhinhinx@gmail.com </p>
+                    <button className='profile_btn' onClick={()=>navigate('/about')}>Learn More</button>
+                    <h2 style={{position:"absolute",top:'650px',left:'620px',fontSize:'40px',color: '#fcf8fb',lineHeight:'35px',fontFamily:'Times New Roman'}}>SOME OF MY PORTOFOLIO....</h2>
+                </div>
+                
            </div>
           
 
