@@ -23,8 +23,8 @@ export default function Model(){
            </ul> */}
            <img src= {require('../image/2.png')} alt='3D modle' />
           <button onClick={back} className='btn_styles'>Back</button>
-          <h1 className='h1-styles'>3D modeling - The Forbidden City</h1>
-          <h4 className='h4-styles'> 
+          <h1 className='text1-styles'>3D modeling - The Forbidden City</h1>
+          <h4 className='text4-styles'> 
                This is a video I made to show the Forbidden City in China. 
                I used <b>Blender</b> to create 3D models and animations of palaces and scenes.
                3D modeling I mainly built the Hall of Supreme Harmony of Forbidden City.
@@ -55,7 +55,7 @@ export default function Model(){
           </video> */}
           {/* <ReactPlayer 
           className='video_styles'
-          // url={require("../video/Building.mp4")}
+          url={require("../video/Building.mp4")}
           width="1500"
           height="700"
           controls={true}

@@ -36,8 +36,8 @@ export default function Message(){
 
   
     return(
-        <div>
-             <ul className='nav'>
+        <div className='whole message'>
+             <ul className='nav nav_mess'>
                <li><NavLink className={computedClassName} to='/home' >Home</NavLink></li>
                <li><NavLink className={computedClassName} to='/portofolio' >Portofolio</NavLink></li>
                <li><NavLink className={computedClassName} to='/about' >About</NavLink></li>

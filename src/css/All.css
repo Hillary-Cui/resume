@@ -1,19 +1,19 @@
 .whole-box{
     position: relative;
-    top:450px;
+    top:500px;
     height: 1500px;
-    width: 1550px
+    width: 1400px;
 }
 .small-box{
     position: relative;
     top: 50px;
-    left:150px;
-    width: 400px;
-    height: 450px;
+    left:140px;
+    width: 300px;
+    height: 350px;
     overflow: hidden;
     transition: 0.5s;
     display: inline-block;
-    margin: 50px 50px 50px 50px;
+    margin: 30px 30px 30px 30px;
     border-radius: 50px;
     border: 3px solid #e4c2da;
 }
@@ -64,7 +64,8 @@
 }
 .small-box .text-small-box h2{
     position: absolute;
-    top:200px;
+    top:145px;
+    width:280px;
     font-size: 25px;
     font-weight: bold;
     /* 默认移出可视范围 */
@@ -80,7 +81,7 @@
 .small-box .all-btn{
     position: absolute;
     top:260px;
-    left: 160px;
+    left: 110px;
     font-size: 18px;
     font-weight: bold;
     width: 80px;

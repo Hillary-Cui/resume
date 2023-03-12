@@ -1,16 +1,16 @@
 /* Loading page */
-body{
+/* body{ */
     /* 100%窗口高度 */
-    position: relative;
-    height: 100vh;
+    /* position: relative;
+    height: 100vh; */
     /* overflow: hidden; */
 
-}
+/* } */
 
 .container{
     position: relative;
-    top:300px;
-    left:760px;
+    top:200px;
+    left:43%;
     width: 220px;
     height: 220px;
 }
@@ -65,8 +65,8 @@ body{
 
 .loading-box{
     position: absolute;
-    left:35%;
-    top:60%;
+    left:33%;
+    top: 240%;
     width: 500px;
 }
 .loading{

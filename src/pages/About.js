@@ -10,9 +10,9 @@ export default function About(){
    }
    
     return(
-        <div>
+        <div className='whole about'>
                {/* <img src= {require('../image/2.png')} className='pro-img'/> */}
-             <ul className='nav'>
+             <ul className='nav nav_mess'>
                <li><NavLink className={computedClassName} to='/home' >Home</NavLink></li>
                <li><NavLink className={computedClassName} to='/portofolio' >Portofolio</NavLink></li>
                <li><NavLink className={computedClassName} to='/about' >About</NavLink></li>

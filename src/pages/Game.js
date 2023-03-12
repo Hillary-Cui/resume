@@ -5,9 +5,7 @@ import '../css/Game.css'
 import { nanoid } from 'nanoid'
 // npm install react-confetti
 import Confetti from "react-confetti"
-import Background from '../components/Background/Background';
 import formateTime  from '../pages/Formattime'
-import { TableSortLabel } from '@mui/material'
 
 export default function Game(){
     
@@ -16,6 +14,8 @@ export default function Game(){
     const [times,setNewTime] = React.useState({
         allTime:0
     });
+
+    let [click,setClick] = React.useState(0);
     
     let now = formateTime(times.allTime);
 
@@ -50,31 +50,37 @@ export default function Game(){
              let newOne = mySore(bestScore.score);
             //  setBestScore({...bestScore,bestOne:formateTime(newOne)});
             bestScore.bestOne = formateTime(newOne);
-             console.log('newscore: '+ bestScore.score);
+             console.log('newscore: '+ bestScore.bestOne);
             }
             if( now < bestScore.bestOne){
                 bestScore.bestOne = now;
+                console.log('updatesocre: '+ bestScore.bestOne);
             }
             setTenzies(true);
+            click = 0 ;
             alert(`Congraduation! You Win! This times you used `+ now + " to win!" + "Your best score is " + bestScore.bestOne);
         }
     },[dice])
 
-
     // Timer
     React.useEffect(()=>{
-        console.log("start" + times.allTime);
-        console.log("now" + now);
+        // console.log("start" + times.allTime);
+        // console.log("now" + now);
+        console.log('clickOrinial' + click);
         const timer =setInterval(() => {
-            setNewTime({allTime:(++times.allTime)});
-            setBestScore({...bestScore,bestOne:formateTime(times.allTime)});
+            if(click === 1){
+                setNewTime({allTime:(++times.allTime)});
+                setBestScore({...bestScore,bestOne:formateTime(times.allTime)});
+            }
         }, 10);
- 
+        
             return()=>{
                 clearInterval(timer);
                 console.log('clear');
             }
+           
     },[dice])
+
 
     function mySore(arr){
         for(let i = 0;i<arr.length;i++){
@@ -111,13 +117,16 @@ export default function Game(){
 
     function rollDice(){
         if(!tenzies){
+            setClick(1);
+            console.log('clickB' + click);
             SetDice(oldDice => oldDice.map(die=>{
                 return die.isHeld ? die:generationNewDice()
             }));
 
         }else{
-            if(!bestScore || now < bestScore.bestOne){
-            }
+            // if(!bestScore || now < bestScore.bestOne){
+                
+            // }
             setTenzies(false);
             SetDice(allNewDice());
             setBestScore((prev)=>({
@@ -125,10 +134,13 @@ export default function Game(){
 
             }));
             setNewTime({allTime:0}); 
+            setClick(0);
         }
     }
 
     function holdDice(id){
+        setClick(1);
+        console.log('click' + click);
         SetDice(oldDice => oldDice.map(die=>{
             return die.id === id ? {...die,isHeld: !die.isHeld} :die
         }))
@@ -142,13 +154,12 @@ export default function Game(){
     return(
         <div className='game-box'>
             {tenzies && <Confetti />}
-             {/* <img src= {require('../image/2.png')} className='.pro-img' alt='search'/> */}
-             <Background />
+             <img src= {require('../components/Background/background.jpeg')} className='.pro-img' alt='search'/>
              <button onClick={back} className='btn_styles'>Back</button>
              <h1 className='game-text'>Tenzies</h1>
+             <h3 className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</h3>
 
              <main className='dice-box'>
-                <h3 className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</h3>
                 <div className='dice-container'>
                     {diceElement}
                 </div>

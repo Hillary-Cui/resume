@@ -14,7 +14,7 @@ export default function Portfolio(){
 
     return(
         <div className='whole'>
-             <ul className='nav'>
+             <ul className='nav nav_mess' >
                <li><NavLink className={computedClassName} to='/home' >Home</NavLink></li>
                <li><NavLink className={computedClassName} to='/portofolio' >Portofolio</NavLink></li>
                <li><NavLink className={computedClassName} to='/about' >About</NavLink></li>

@@ -1,6 +1,7 @@
 .search-box{
-    width:1500px;
-    /* height:1000px; */
+    margin: 0;
+    padding: 0;
+    display: flex;
   }
 
 .search-box img{
@@ -14,17 +15,17 @@
 }
 
 .search-text{
-    position: relative;
-    top:150px;
-    left:600px;
-    font-size: 90px;
+    position: absolute;
+    top:32%;
+    left:30%;
+    font-size: 85px;
     color: white;
 }
 
 .search-main{
     position: relative;
-    top:220px;
-    left:150px;
+    top:250px;
+    left:5%;
 }
 /* main */
 
@@ -60,7 +61,7 @@
 .meme-form .upload_button{
     position: relative;
     padding:8px 0;
-    left:400px;
+    left:280px;
     border-radius: 5px;
     background: linear-gradient(to right,#aa9ae2 30%,#ebb3db ); 
     /* background: #ecacda; */
@@ -76,24 +77,33 @@
 .meme{
     position:relative;
     margin-top: 80px;
-    height: 1000px;
+    left:15%;
+    width: 800px;
+    /* height: 1000px; */
 }
 
 .meme .memeImage{
-    max-width: 100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    max-width: 800px;
+    max-height: 500px;
+    padding-bottom: 70px;
     transform: rotate(360deg);
 }
 
 .meme .meme_text {
     position: absolute;
-    width: 80%;
+    left:50%;
+    width: 100%;
+    max-width: 650px;
     text-align: center;
-    left: 50%;
+    white-space: normal;
     transform: translateX(-50%);
     margin: 15px 0;
     padding: 0 5px;
     font-family: impact, sans-serif;
-    font-size: 8em;
+    font-size: 5em;
     text-transform: uppercase;
     color: white;
     letter-spacing: 1px;
@@ -113,7 +123,8 @@
 }
 .meme .meme_text_bottom{
     padding-bottom: 40px;
-    bottom:0;
+    top:360px;
+    /* bottom: 0; */
 }
 
 .meme .download_button{

@@ -2,7 +2,7 @@ import React from 'react'
 import {useNavigate} from 'react-router-dom'
 // npm install react-player
 // import ReactPlayer from 'react-player'
-import '../css/Model.css'
+import '../css/VR.css'
 
 
 
@@ -25,8 +25,8 @@ export default function VR(){
         <div className='model-whole'>
            <img src= {require('../image/2.png')} alt='VR' />
           <button onClick={back} className='btn_styles'>Back</button>
-          <h1 className='h1-styles'>Youth Justice center VR application</h1>
-          <h4 className='h4-styles'> 
+          <h1 className='text1-styles'>Youth Justice center VR application</h1>
+          <h4 className='text4-styles'> 
                This is a video I made to show the Youth Justice Centre Officer daily work processes. 
                I used <b>Unity</b> offers users with a real-time development platform, which includes 3D models, animations, and base API to operate interactions. 
                <br/> <br/>
