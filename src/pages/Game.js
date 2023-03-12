@@ -37,6 +37,12 @@ export default function Game(){
     //      setBestScore(bestScore);
     //      console.log('nowtime: '+ now +'score: '+ bestScore);
     // },[bestScore])
+    
+    // back to top page 
+    React.useEffect(()=>{
+        window.scrollTo(0,0);
+      },[])
+
 
     // check win
     React.useEffect(()=>{
@@ -62,6 +68,7 @@ export default function Game(){
         }
     },[dice])
 
+    
     // Timer
     React.useEffect(()=>{
         // console.log("start" + times.allTime);

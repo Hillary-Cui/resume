@@ -90,10 +90,6 @@ const route =[
         path:'/search',
         element: <Search />
     },
-    {
-        path:'/calculator',
-        element: <Calculator />
-    }
 ]
 export default route;
 

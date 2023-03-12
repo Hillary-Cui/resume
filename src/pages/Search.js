@@ -10,6 +10,11 @@ export default function Search(){
     function back(){
         nevigate(-1);
     };
+    
+    React.useEffect(()=>{
+        window.scrollTo(0,0);
+      },[])
+
     return(
         <div className='search-box'>
              <img src= {require('../image/2.png')} className='.pro-img' alt='search'/>

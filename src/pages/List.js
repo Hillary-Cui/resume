@@ -54,6 +54,9 @@ const clearAll = () =>{
     setTodo(newTodos);
 }
 
+React.useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
 
 
     return(

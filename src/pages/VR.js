@@ -21,8 +21,12 @@ export default function VR(){
 
   // }
 
+  React.useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+
     return(
-        <div className='model-whole'>
+        <div className='model'>
            <img src= {require('../image/2.png')} alt='VR' />
           <button onClick={back} className='btn_styles'>Back</button>
           <h1 className='text1-styles'>Youth Justice center VR application</h1>
