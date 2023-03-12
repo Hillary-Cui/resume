@@ -1,11 +1,12 @@
 /* start page  */
 #text{
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 78%;
+    top: 400px;
+    width: 800px;
     transform: translate(-50%,-50%); 
     color: #fff;
-    font-size: 80px;
+    font-size: 70px;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
@@ -33,15 +34,13 @@
 
 .start_button{
     position: absolute;
-    top:70%;
-    left:45%;
-    /* top:720px;
-    left:800px; */
-    width: 190px;
+    top:580px;
+    left:70%;
+    width: 160px;
     height: 60px;
     line-height: 100%;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     border: none;
     color: #fdfcfb;
     background: linear-gradient(to right,#a6c1ee,#fbc2eb,#5ee7df,#a6c1ee);

@@ -13,16 +13,14 @@ body{
     /* font-family: 'EB Garamond'; */
 }
 
-.pro-img{
-    position: absolute;
-    top:0px;
-    left:0px;
-    width:100%;
-    height: 100%;
-    /* height:950px; */
-    transform: rotate(180deg);
-    z-index: -1;
 
+.whole{
+    position: relative;
+    display: flex;
+    height:100%;
+    /* width: 100%; */
+    width: 1000px;
+    margin: 0;
+    padding: 0;
 }
-
 

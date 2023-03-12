@@ -12,7 +12,7 @@ export default function Start(){
         navigate('/loading')
     }
     return(
-        <div>
+        <div className='whole'>
         <Background />
         <h1 id='text'>Welcome to Hillary's website</h1>
         <button className='start_button' onClick={startButton}>Start</button>
