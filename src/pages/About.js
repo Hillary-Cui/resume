@@ -84,43 +84,48 @@ export default function About(){
             <div className='experiences'>
                 <h2>Experiences</h2>
                 <h3>
+                    Full Stack Engineer Internship - GroupTag,Melbourne
+                    <h4>Using flutter to build the cross-platform mobile application. <b/>
+                        Modifying the existing page by flutter to improve the app design.</h4>
+                </h3>
+                <h3 style={{top:"200px"}}>
                     Project: To-do List
                     <h4>Using HTML, CSS, Javascript and React Framework to build a to-do list. </h4>
                 </h3>
-                <h3 style={{top:"200px"}}>
+                <h3 style={{top:"300px"}}>
                     Project: Child game
                     <h4>Using HTML, CSS, Javascript and React Framework to build the small child game. <br/>
                     This game is suitable for early childhood. They can use the game to identify numbers.  </h4>
                 </h3>
-                <h3 style={{top:"330px"}}>
+                <h3 style={{top:"430px"}}>
                     Project: Image search and production
                     <h4>Using HTML, CSS, Javascript and React Framework to build tge Image search and production.<br/>
                     The users can search for images by typing in text. In addition, they can create a new image with the text they want </h4>
                 </h3>
-                <h3 style={{top:"460px"}}>
+                <h3 style={{top:"540px"}}>
                     Project: Small calculator 
                     <h4>Using HTML, CSS, Javascript React Framework with redux to build a small calculator. The calculator can....</h4>
                 </h3>
-                <h3 style={{top:"550px"}}>
+                <h3 style={{top:"630px"}}>
                     Project:  3D modelling and animation
                     <h4> Builiding 3D modelling and animation by Blender.
                     In this project, I created some of palaces of the Forbidden City by Blender. And also created an animation to show the four seasons of the Forbidden City. </h4>
                 </h3>
-                <h3 style={{top:"670px"}}>
+                <h3 style={{top:"750px"}}>
                     Project:  Youth Justice center VR application -- Youth Justice NSW, Uni Sydney Tech Lab, Sydney
                     <h4>
                         • The project is to build a VR application through Unity and Blender to show people who want to apply for a job as a youth justice officer a full day's work process to consider whether the job is right for them.
                         <br />• In this project, I build parts of the scene and characters in the game using Unity, Blender and photoshop according to client requirements.
                         <br />• This product is for the job applicants to know about the Youth Justice center, so I inquired a lot of information and constantly modified the design according to the requirements of clients, and trying to design according to the actual scene. A simple and immersive design showcases a day's work for a Youth Justice officer. </h4>
                 </h3>
-                <h3 style={{top:"910px"}}>
+                <h3 style={{top:"1010px"}}>
                     Intern: The People's Bank Of China, Guangzhou, China
                     <h4>• The people's bank of China is a central bank of China. 
                         <br />• For 2-month internship, major responsibility was doing analysis and creating work electronic information preparation and input based on the requirement ofthe director.
                         <br />• Conducted research on customer credit investigation by compiling data, making Excel spreadsheet, data visualization and generating reports.
                         <br />• Improve Microsoft office skill and data analysis capability. </h4>
                 </h3>
-                <h3 style={{top:"1130px"}}>
+                <h3 style={{top:"1230px"}}>
                     Intern: ACIC, Sydney, NSW
                     <h4>• ACIC is Australian college information center. It is world-class education consulting firm. For 1 month internship, plan an activity as a group.
                         <br/>•  The group through analysis the company background, doing marketing research, define goals of the activity, planning, testing and so on to presented to managers how to make the activity better and finally develop a good project plan.
